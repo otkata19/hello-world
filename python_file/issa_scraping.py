@@ -16,7 +16,7 @@ for num in range(20, 22120, 20):
     rows = table.findAll("tr")
     #1行目、2行目を消す
     del rows[:2]
-    #
+    #csvファイルに書き込み
     try:
         writer = csv.writer(csvFile)
         for row in rows:
